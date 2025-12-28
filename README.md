@@ -59,10 +59,12 @@ classDiagram
 ```
 
 Textual hierarchy (fallback):
-- User
-    - Student
-    - Teacher
-    - Admin
+```
+User
+├─ Student
+├─ Teacher
+└─ Admin
+```
 
 ## Sample Output
 ```
