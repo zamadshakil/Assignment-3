@@ -3,12 +3,12 @@
 A small C++ program that demonstrates single inheritance and destructor order for a simple school system with **User**, **Student**, **Teacher**, and **Admin** classes. Each object logs its lifecycle (construction, actions, and destruction) to the console to make ownership and cleanup visible.
 
 ## Project Structure
-- `Assignment-3/Assignment-3.cpp` — main program source
-- `Assignment-3/Assignment-3.vcxproj` — Visual Studio project file
-- `Assignment-3/Assignment-3.vcxproj.filters` — Visual Studio filters
+- `Assignment-3/Assignment-3.cpp` - main program source
+- `Assignment-3/Assignment-3.vcxproj` - Visual Studio project file
+- `Assignment-3/Assignment-3.vcxproj.filters` - Visual Studio filters
 
 ## Prerequisites
-- Any modern C++ compiler (e.g., `g++`, clang, MSVC)
+- Any modern C++ compiler (e.g., `g++`, Clang, MSVC)
 - Optional: Visual Studio to use the provided project file
 
 ## Build & Run
@@ -17,8 +17,8 @@ You can start from the repository root (the directory containing this README).
 ### Using g++ (from repository root)
 ```bash
 cd Assignment-3
-g++ Assignment-3.cpp -o assignment3
-./assignment3
+g++ Assignment-3.cpp -o assignment-3
+./assignment-3
 ```
 
 ### Using Visual Studio
