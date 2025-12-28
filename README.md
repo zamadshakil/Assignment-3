@@ -17,8 +17,8 @@ You can start from the repository root (the directory containing this README).
 ### Using g++ (from repository root)
 ```bash
 cd Assignment-3
-g++ Assignment-3.cpp -o assignment-3
-./assignment-3
+g++ Assignment-3.cpp -o Assignment-3
+./Assignment-3
 ```
 
 ### Using Visual Studio
