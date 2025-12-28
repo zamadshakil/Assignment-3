@@ -9,8 +9,8 @@ Paths below are relative to the repository root (this README's directory).
 - `Assignment-3/Assignment-3.vcxproj.filters` - Visual Studio filters
 
 ## Prerequisites
-- Any modern C++ compiler (e.g., `g++`, `clang++`, or `MSVC`).
-- Optional: Visual Studio to use the provided project file.
+- Any modern C++ compiler (e.g., `g++`, `clang++`, or `MSVC`)
+- Optional: Visual Studio to use the provided project file
 
 ## Build & Run
 You can start from the repository root (the directory containing this README).
