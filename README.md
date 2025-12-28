@@ -9,13 +9,13 @@ A small C++ program that demonstrates single inheritance and destructor order fo
 ## Build & Run
 ### Using g++
 ```bash
-cd /home/runner/work/Assignment-3/Assignment-3/Assignment-3
+cd Assignment-3
 g++ Assignment-3.cpp -o assignment3
 ./assignment3
 ```
 
 ### Using Visual Studio
-1. Open `Assignment-3/Assignment-3.vcxproj`.
+1. From the repository root, open `Assignment-3/Assignment-3.vcxproj`.
 2. Build the solution.
 3. Run the produced executable from Visual Studio or the output directory.
 
