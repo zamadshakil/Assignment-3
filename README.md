@@ -2,12 +2,19 @@
 
 A small C++ program that demonstrates single inheritance and destructor order for a simple school system with **User**, **Student**, **Teacher**, and **Admin** classes. Each object logs its lifecycle (construction, actions, and destruction) to the console to make ownership and cleanup visible.
 
+## Project Structure
+- `Assignment-3/Assignment-3.cpp` — main program source
+- `Assignment-3/Assignment-3.vcxproj` — Visual Studio project file
+- `Assignment-3/Assignment-3.vcxproj.filters` — Visual Studio filters
+
 ## Prerequisites
-- C++ compiler (e.g., `g++`, clang, or MSVC)
-- Optional: Visual Studio can open the provided `Assignment-3.vcxproj`
+- Any modern C++ compiler (e.g., `g++`, clang, MSVC)
+- Optional: Visual Studio to use the provided project file
 
 ## Build & Run
-### Using g++
+You can start from the repository root (the directory containing this README).
+
+### Using g++ (from repository root)
 ```bash
 cd Assignment-3
 g++ Assignment-3.cpp -o assignment3
@@ -23,6 +30,30 @@ g++ Assignment-3.cpp -o assignment3
 1. Creates one `Student`, one `Teacher`, and one `Admin`, each derived from `User`.
 2. Calls `login()` plus a role-specific action (`registerCourse`, `uploadMarks`, `manageSystem`).
 3. Exiting scope triggers destructors in reverse creation order, illustrating proper cleanup.
+
+## Class Diagram (UML)
+
+```mermaid
+classDiagram
+    class User {
+        -string name
+        -int id
+        +login()
+        +logout()
+    }
+    class Student {
+        +registerCourse()
+    }
+    class Teacher {
+        +uploadMarks()
+    }
+    class Admin {
+        +manageSystem()
+    }
+    User <|-- Student
+    User <|-- Teacher
+    User <|-- Admin
+```
 
 ## Sample Output
 ```
