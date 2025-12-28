@@ -39,8 +39,8 @@ g++ Assignment-3.cpp -o school-system
 ```mermaid
 classDiagram
     class User {
-        -string name
-        -int id
+        #string name
+        #int id
         +login()
         +logout()
     }
