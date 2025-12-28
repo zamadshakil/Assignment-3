@@ -10,7 +10,7 @@ Paths below are relative to the repository root (this README's directory).
 
 ## Prerequisites
 - Any modern C++ compiler (e.g., `g++`, `clang++`, or `MSVC`).
-- Optional: Visual Studio to use the provided project file
+- Optional: Visual Studio to use the provided project file.
 
 ## Build & Run
 You can start from the repository root (the directory containing this README).
@@ -60,9 +60,9 @@ classDiagram
 
 Textual hierarchy (fallback):
 - User
-  - Student
-  - Teacher
-  - Admin
+    - Student
+    - Teacher
+    - Admin
 
 ## Sample Output
 ```
