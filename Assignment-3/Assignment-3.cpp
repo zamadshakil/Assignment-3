@@ -9,13 +9,13 @@ protected:
     int id;
 
 public:
-    // Base Constructor
+
     User(string n, int i) : name(n), id(i) {
         cout << "[User Constructor] Created User: " << name << " (ID: " << id << ")" << endl;
     }
 
-    // Base Destructor
-    // declared virtual to ensure correct destructor sequence if deleted via base pointer
+
+    // declared virtual to ensure correct destructor sequence
     virtual ~User() {
         cout << "[User Destructor] Cleaning up User: " << name << endl;
     }
@@ -29,10 +29,10 @@ public:
     }
 };
 
-// Derived Class 1: Student
+// Derived Class Student
 class Student : public User {
 public:
-    // Student Constructor calls User Constructor
+
     Student(string n, int i) : User(n, i) {
         cout << "  -> [Student Constructor] Initialized Student specifics." << endl;
     }
@@ -46,7 +46,7 @@ public:
     }
 };
 
-// Derived Class 2: Teacher
+// Derived Class Teacher
 class Teacher : public User {
 public:
     Teacher(string n, int i) : User(n, i) {
@@ -62,7 +62,7 @@ public:
     }
 };
 
-// Derived Class 3: Admin
+// Derived Class Admin
 class Admin : public User {
 public:
     Admin(string n, int i) : User(n, i) {
@@ -81,10 +81,8 @@ public:
 int main() {
     cout << "=== STARTING SYSTEM SIMULATION ===\n" << endl;
 
-    // Using a local scope block {} to demonstrate destructor calls
-    // before the program completely ends.
     {
-        cout << "--- Creating Objects ---" << endl;
+        cout << "\n--- Creating Objects ---\n" << endl;
 
         // 1. Create Student
         Student s1("Zamad", 1001);
@@ -105,7 +103,7 @@ int main() {
 
         cout << "\n--- Exiting Scope (Destructors Triggered) ---" << endl;
     }
-    // Objects are destroyed here in reverse order of creation (Stack behavior)
+  
 
     cout << "\n=== END OF PROGRAM ===" << endl;
     return 0;
