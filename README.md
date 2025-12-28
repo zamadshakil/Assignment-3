@@ -8,7 +8,7 @@ A small C++ program that demonstrates single inheritance and destructor order fo
 - `Assignment-3/Assignment-3.vcxproj.filters` - Visual Studio filters
 
 ## Prerequisites
-- Any modern C++ compiler (e.g., `g++`, Clang, MSVC)
+- Any modern C++ compiler (e.g., `g++`, Clang, and MSVC)
 - Optional: Visual Studio to use the provided project file
 
 ## Build & Run
@@ -17,8 +17,8 @@ You can start from the repository root (the directory containing this README).
 ### Using g++ (from repository root)
 ```bash
 cd Assignment-3
-g++ Assignment-3.cpp -o Assignment-3
-./Assignment-3
+g++ Assignment-3.cpp -o assignment3
+./assignment3
 ```
 
 ### Using Visual Studio
@@ -32,6 +32,8 @@ g++ Assignment-3.cpp -o Assignment-3
 3. Exiting scope triggers destructors in reverse creation order, illustrating proper cleanup.
 
 ## Class Diagram (UML)
+
+> Note: Mermaid rendering is required to view the diagram below. If Mermaid is not supported, refer to the textual hierarchy that follows.
 
 ```mermaid
 classDiagram
@@ -54,6 +56,12 @@ classDiagram
     User <|-- Teacher
     User <|-- Admin
 ```
+
+Textual hierarchy (fallback):
+- User
+  - Student
+  - Teacher
+  - Admin
 
 ## Sample Output
 ```
